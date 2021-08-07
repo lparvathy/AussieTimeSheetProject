@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-07T16:55:53 IST" name="Suite" finished-at="2021-08-07T16:57:12 IST" duration-ms="79033">
+    <groups>
+    </groups>
+    <test started-at="2021-08-07T16:55:53 IST" name="MyProject" finished-at="2021-08-07T16:57:12 IST" duration-ms="79033">
+      <class name="testngPkg.LoginPage">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String,java.lang.String)[pri:0, instance:testngPkg.LoginPage@5acf93bb]" started-at="2021-08-07T16:55:53 IST" name="launchBrowser" finished-at="2021-08-07T16:56:01 IST" duration-ms="7712" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://erp.buffalocart.com/login/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="urlVerify()[pri:1, instance:testngPkg.LoginPage@5acf93bb]" started-at="2021-08-07T16:56:01 IST" name="urlVerify" finished-at="2021-08-07T16:56:01 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- urlVerify -->
+        <test-method signature="titleVerify()[pri:2, instance:testngPkg.LoginPage@5acf93bb]" started-at="2021-08-07T16:56:01 IST" name="titleVerify" finished-at="2021-08-07T16:56:01 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleVerify -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:3, instance:testngPkg.LoginPage@5acf93bb]" started-at="2021-08-07T16:56:01 IST" name="loginWithValidCredentials" finished-at="2021-08-07T16:56:21 IST" duration-ms="19643" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='parsley-id-6']/li"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TDM8J6J', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf43e0815142f7380d62753d27ae1bcb
+*** Element info: {Using=xpath, value=//*[@id='parsley-id-6']/li}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='parsley-id-6']/li"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-TDM8J6J', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:63389}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf43e0815142f7380d62753d27ae1bcb
+*** Element info: {Using=xpath, value=//*[@id='parsley-id-6']/li}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at utility.WebDriverManager.loginWithValidCredentials(WebDriverManager.java:102)
+at testngPkg.LoginPage.loginWithValidCredentials(LoginPage.java:76)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngPkg.LoginPage@5acf93bb]" started-at="2021-08-07T16:57:12 IST" name="afterTest" finished-at="2021-08-07T16:57:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngPkg.LoginPage -->
+      <class name="testngPkg.Tasks">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:56:01 IST" name="beforeTest" finished-at="2021-08-07T16:56:01 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="navigateToTasks()[pri:8, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:56:38 IST" name="navigateToTasks" finished-at="2021-08-07T16:56:40 IST" duration-ms="2325" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToTasks -->
+        <test-method signature="newTaskCreate()[pri:9, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:56:40 IST" name="newTaskCreate" finished-at="2021-08-07T16:56:47 IST" duration-ms="6761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newTaskCreate -->
+        <test-method signature="switchtoAllTasks()[pri:10, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:56:47 IST" name="switchtoAllTasks" finished-at="2021-08-07T16:56:48 IST" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchtoAllTasks -->
+        <test-method signature="searchTask()[pri:11, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:56:48 IST" name="searchTask" finished-at="2021-08-07T16:56:49 IST" duration-ms="1219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTask -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngPkg.Tasks@f5acb9d]" started-at="2021-08-07T16:57:12 IST" name="afterTest" finished-at="2021-08-07T16:57:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngPkg.Tasks -->
+      <class name="testngPkg.Bugs">
+        <test-method signature="navigateToBugs()[pri:12, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:56:49 IST" name="navigateToBugs" finished-at="2021-08-07T16:56:52 IST" duration-ms="2871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToBugs -->
+        <test-method signature="newBugCreate()[pri:13, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:56:52 IST" name="newBugCreate" finished-at="2021-08-07T16:57:07 IST" duration-ms="14238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newBugCreate -->
+        <test-method signature="switchtoAllBugs()[pri:14, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:57:07 IST" name="switchtoAllBugs" finished-at="2021-08-07T16:57:08 IST" duration-ms="1400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchtoAllBugs -->
+        <test-method signature="searchBug()[pri:15, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:57:08 IST" name="searchBug" finished-at="2021-08-07T16:57:09 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBug -->
+        <test-method signature="generateExtentReport()[pri:16, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:57:09 IST" name="generateExtentReport" finished-at="2021-08-07T16:57:09 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "testngPkg.ExtentReportGenerator.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "testngPkg.ExtentReportGenerator.driver" is null
+at testngPkg.ExtentReportGenerator.generateExtentReport(ExtentReportGenerator.java:35)
+at testngPkg.Bugs.generateExtentReport(Bugs.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+        <test-method signature="logOut()[pri:17, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:57:09 IST" name="logOut" finished-at="2021-08-07T16:57:10 IST" duration-ms="1274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngPkg.Bugs@4fb3ee4e]" started-at="2021-08-07T16:57:12 IST" name="afterTest" finished-at="2021-08-07T16:57:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngPkg.Bugs -->
+      <class name="testngPkg.ExtentReportGenerator">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngPkg.ExtentReportGenerator@5d7148e2]" started-at="2021-08-07T16:57:10 IST" name="beforeClass" finished-at="2021-08-07T16:57:11 IST" duration-ms="944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="generateExtentReport()[pri:18, instance:testngPkg.ExtentReportGenerator@5d7148e2]" started-at="2021-08-07T16:57:11 IST" name="generateExtentReport" finished-at="2021-08-07T16:57:11 IST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateExtentReport -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngPkg.ExtentReportGenerator@5d7148e2]" started-at="2021-08-07T16:57:11 IST" name="afterClass" finished-at="2021-08-07T16:57:12 IST" duration-ms="686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- testngPkg.ExtentReportGenerator -->
+      <class name="testngPkg.Projects">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:56:01 IST" name="beforeTest" finished-at="2021-08-07T16:56:01 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="navigateToProjects()[pri:4, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:56:21 IST" name="navigateToProjects" finished-at="2021-08-07T16:56:25 IST" duration-ms="4308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToProjects -->
+        <test-method signature="newProjectCreate()[pri:5, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:56:25 IST" name="newProjectCreate" finished-at="2021-08-07T16:56:35 IST" duration-ms="9749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newProjectCreate -->
+        <test-method signature="switchtoAllProjects()[pri:6, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:56:35 IST" name="switchtoAllProjects" finished-at="2021-08-07T16:56:37 IST" duration-ms="1886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- switchtoAllProjects -->
+        <test-method signature="searchProject()[pri:7, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:56:37 IST" name="searchProject" finished-at="2021-08-07T16:56:38 IST" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProject -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngPkg.Projects@618425b5]" started-at="2021-08-07T16:57:12 IST" name="afterTest" finished-at="2021-08-07T16:57:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testngPkg.Projects -->
+    </test> <!-- MyProject -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyProject(failed)">
+    <parameter name="password" value="123456"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://erp.buffalocart.com/login/"/>
+    <parameter name="username" value="admin"/>
+    <classes>
+      <class name="testngPkg.LoginPage">
+        <methods>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testngPkg.LoginPage -->
+      <class name="testngPkg.Bugs">
+        <methods>
+          <include name="generateExtentReport"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- testngPkg.Bugs -->
+    </classes>
+  </test> <!-- MyProject(failed) -->
+</suite> <!-- Failed suite [Suite] -->
